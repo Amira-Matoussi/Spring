@@ -1,27 +1,16 @@
 package tn.esprit.whiteexam.services;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.whiteexam.entities.Contract;
+import tn.esprit.whiteexam.repositories.ContractRepo;
 
 import java.util.List;
-
+@Service
+@AllArgsConstructor
 public class ContractServiceImp implements IContractService{
-    @Override
-    public List<Contract> retrieveAllContracts() {
-        return null;
-    }
+    ContractRepo contractRepo;
 
-    @Override
-    public Contract addCourse(Contract course) {
-        return null;
-    }
 
-    @Override
-    public Contract updateCourse(Contract course) {
-        return null;
-    }
 
-    @Override
-    public Contract retrieveCourse(Contract numContract) {
-        return null;
-    }
 }
